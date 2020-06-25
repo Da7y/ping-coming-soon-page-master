@@ -1,0 +1,136 @@
+body{
+  width: 50%;
+  margin: 4rem auto;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+/* header */
+h1{
+  font-size: 3.5rem;
+  font-weight: 300;
+  color:  hsl(0, 0%, 59%);
+}
+h1 b{
+  color: black;
+}
+h4{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* notify section */
+.notify{
+  margin-top: 2.5rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 65% 30%
+}
+.placeholder::placeholder{
+  color: #D8DCF2;
+}
+
+input{
+  font-family: 'Libre Franklin', sans-serif;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: 1px solid  #D8DCF2;
+  outline-style: none;
+}
+button{
+  background-color: hsl(223, 87%, 63%);
+  border-style: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 15px;
+  box-shadow: 0 7px 15px #D8DCF2;
+  outline-style: none;
+  cursor: pointer;
+}
+button:hover{
+  background-color:#7195F5;
+}
+.error-message{
+  text-align: left;
+  margin-left: 2rem;
+  font-size: 13px;
+  color:  hsl(354, 100%, 66%);
+  display: none;
+}
+/* the image  */
+.image img{
+  width: 100%;
+  margin: 5rem 0;
+}
+/* social */
+.social{
+  display: flex;
+  justify-content: center;
+}
+.circal{
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid #EEEFF4;
+  padding:7px 5px;
+  margin: 0 .5rem;
+  color: hsl(223, 87%, 63%);
+
+}
+.circal:hover{
+  color: white;
+  background-color:  hsl(223, 87%, 63%);
+  cursor: pointer;
+}
+/* copy rights */
+.copy-rights{
+  color: hsl(0, 0%, 59%);
+  font-size: 13px;
+  margin: 1.7rem 0;
+}
+
+  .attribution {
+    font-size: 11px;
+    color: hsl(0, 0%, 59%);
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  }
+@media (max-width:1250px) and (min-width:801px) {
+  body{
+    width: 80%;
+  }
+  h1{
+    font-size: 3rem;
+  }
+
+}
+@media (max-width:800px) {
+  
+  body{
+    width: 80%;
+  }
+  h1{
+    font-size: 1.7rem;
+  }
+  h4{
+    font-size:16px;
+  }
+  .notify{
+    display: flex;
+    flex-direction: column;
+
+  }
+  button{
+    margin-top: 1rem;
+    padding: 15px;
+    font-size: 17px;
+
+  }
+  .image img{
+    margin: 2rem 0 5rem;
+  }
+
+
+}
